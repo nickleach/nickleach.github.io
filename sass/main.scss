@@ -1,0 +1,32 @@
+body{
+  background-color:lightgrey;
+}
+
+h4{
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+a{
+  color: black
+}
+a:hover{
+  color: #1793E7;
+}
+.brand-logo{
+
+
+}
+// boxes
+.card-panel{
+  background-color: white;
+  border-radius: 5px;
+}
+// header custom class
+.nav-header{
+  font-family: 'Titillium Web', sans-serif;
+  opacity: .95
+}
+// containers
+.container{
+  text-align: center;
+}

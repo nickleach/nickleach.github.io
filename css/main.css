@@ -1,0 +1,23 @@
+body {
+  background-color: lightgrey; }
+
+h4 {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif; }
+
+a {
+  color: black; }
+
+a:hover {
+  color: #1793E7; }
+
+.card-panel {
+  background-color: white;
+  border-radius: 5px; }
+
+.nav-header {
+  font-family: 'Titillium Web', sans-serif;
+  opacity: .95; }
+
+.container {
+  text-align: center; }
