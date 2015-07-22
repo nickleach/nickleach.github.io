@@ -11,10 +11,18 @@
 </head>
 <body>
   <header>
+
+  </header>
+
+  <div class="content">
+
+
+    <!-- First background image -->
+    <div class="parallax-container">
     <!-- Nav bar -->
-    <div class="navbar-fixed nav-header">
-      <nav>
-        <div class="nav-wrapper light-blue darken-4">
+    <div class="navbar-fixed nav-header transparent">
+      <nav class="transparent">
+        <div class="nav-wrapper transparent">
           <a href="#" class="brand-logo" style="padding-left: 20px">Nick Leach</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#about">About</a></li>
@@ -29,13 +37,24 @@
         </div>
       </nav>
     </div>
-  </header>
-
-  <div class="content">
-
-    <!-- First background image -->
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/parallax1.jpg"></div>
+    <ul id="staggered-list" class="staggered-nav">
+      <li>
+        <h5>
+          <a href="#about">About</a>
+        </h5>
+      </li>
+      <li>
+        <h5>
+          <a href="#skills">Skills</a>
+        </h5>
+      </li>
+      <li>
+        <h5>
+          <a href="#skills">Portfolio</a>
+        </h5>
+      </li>
+    </ul>
+      <div class="parallax first-image"><img src="images/DUGHLO7780.jpg"></div>
     </div>
 
     <!-- About Section -->
@@ -72,7 +91,7 @@
 
     <!-- Second background image -->
     <div class="parallax-container">
-      <div class="parallax"><img src="images/parallax2.jpg"></div>
+      <div class="parallax img-2"><img src="images/IMG_6647.jpg"></div>
     </div>
 
     <!-- Contact -->
@@ -106,6 +125,12 @@
   <script src="js/vendor/materialize.js"></script>
   <script src="js/vendor/parallax.js"></script>
   <script src="js/vendor/scrollspy.js"></script>
+
+  <script src="js/vendor/scrollfire.js"></script>
+
+  <script src="js/vendor/transitions.js"></script>
+
+
   <!-- // <script src="js/vendor/angular.js"></script> -->
 
   <!-- MAIN -->

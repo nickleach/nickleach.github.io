@@ -1,5 +1,5 @@
 body {
-  background-color: lightgrey; }
+  font-family: 'Titillium Web', sans-serif; }
 
 h4 {
   text-align: center;
@@ -11,13 +11,32 @@ a {
 a:hover {
   color: #1793E7; }
 
+nav {
+  box-shadow: none; }
+
 .card-panel {
   background-color: white;
   border-radius: 5px; }
 
 .nav-header {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', sans-serif; }
+
+.nav-header-scroll {
   opacity: .95; }
 
 .container {
   text-align: center; }
+
+.staggered-nav {
+  float: right;
+  color: white;
+  margin: 50px; }
+  .staggered-nav h5 {
+    font-size: 2.64rem; }
+
+#staggered-list li {
+  opacity: 0; }
+
+.first-image img {
+  width: 20%;
+  opacity: .9; }
