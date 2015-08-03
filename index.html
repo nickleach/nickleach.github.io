@@ -24,17 +24,15 @@
       <nav class="transparent nav-initial">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo" style="padding-left: 20px"><h1>Nick Leach</h1><h3>Front End Developer</h3></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-
+           <ul class="right">
             <li><a href="https://github.com/nickleach"><i class="fa fa-github"></i></a></li>
             <li><a href="https://www.linkedin.com/pub/nick-leach/bb/599/279"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://medium.com/@nickleach"><i class="fa fa-medium"></i></a></li>
-            <!-- <li><a href="#contact">Contact</a></li> -->
-
+          </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down hidden-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -42,17 +40,17 @@
     <ul id="staggered-list" class="staggered-nav">
       <li>
         <h5>
-          <a href="#about">About</a>
+          <a class="about-link" href="#about">About</a>
+        </h5>
+      </li>
+      <li>
+        <h5>
+          <a href="#work">Work</a>
         </h5>
       </li>
       <li>
         <h5>
           <a href="#skills">Skills</a>
-        </h5>
-      </li>
-      <li>
-        <h5>
-          <a href="#portfolio">Portfolio</a>
         </h5>
       </li>
       <li>
@@ -65,19 +63,19 @@
     </div>
 
     <!-- About Section -->
-    <div id="about" class="about section white scrollspy ">
+    <div id="about" class="about section scrollspy">
       <div class="row container">
 
-          <div class="card-panel">
+          <div class="card-panel image-fades">
 
               <h4 class="header">About Me</h4>
               <hr/>
-              <div class="meholder image-fades">
+              <div class="meholder">
                 <img src="images/nickleach.jpg">
               </div>
 
-               <p> I'm a hacker, musician, and father with a passion for creating. Whether it's a webpage, app, song or album, I love the art of taking a complex problem and turning it into a something everyone can enjoy or use. </p>
-               <p> I recently completed a 12 week code immersion program at the Iron Yard, where my focus was on front end development. Below you'll find some of my work.</p>
+               <p> I'm a hacker, musician, and father with a passion for creating. Whether it's a webpage, app, song or album, I love the art of taking a complex problem and turning it into a something everyone can enjoy or use. With a profound love for technology and the role it plays in making lives easier, I strive to learn new skills and find more efficient ways to do things. </p>
+               <p>Below you'll find some of my work. If you're interested in hiring me please <a href="#contact">contact me</a> </p>
 
           </div>
 
@@ -88,14 +86,129 @@
       </div>
     </div>
 
-    <!-- Skills Section -->
+
+
+    <!-- work -->
+    <div id="work" class="work scrollspy">
+      <div class="row work-overlay section">
+        <div class="col s12">
+
+          <h4 style="color: white;">Work</h4>
+          <hr/>
+
+                      <!-- Modal Trigger -->
+          <div class="modal-col col s4">
+            <a class="modal-trigger shortwav-modal" href="#shortWav">
+              <div class="modal-hover card-panel">
+
+                <div class="logo">
+                  <img src="images/shortwav-logo.png">
+                </div>
+                <div class="screenshot">
+                  <img src="images/shortwav.png">
+                </div>
+
+                <div class="hover-content"><i class="fa fa-arrows-alt"></i></div>
+              </div>
+            </a>
+
+              <!-- Modal Structure -->
+              <div id="shortWav" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                  <h4>shortWav</h4>
+                  <label>Powered by Soundcloud</label>
+                  <p>ShortWav is an online streaming service that brings local artists and curious listeners together. Any artist can upload their tracks by registering through their SoundCloud account, while listeners can create their own radio stations based on location and/or genre.</p>
+                  <img src="images/shortwav.png">
+                  <p><strong style="font-weight: 900;">Tools Used:</strong> AngularJS, Angular Material, SoundCloud API, UI-Router, PARSE</p>
+                  <a href="https://github.com/shortWav/SWFE">Checkout the code!</a>
+                </div>
+                <div class="modal-footer">
+                  <a class="visit-site left-align" href="http://shortwavradio.com">Visit the site!</a>
+                  <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat ">Close</a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Modal Trigger -->
+            <div class="modal-col col s4">
+
+                <a class="modal-trigger modal-hover shortwav-modal" href="#AMH">
+                <div class="modal-hover card-panel">
+                  <div class="logo">
+                    <img src="images/amh-logo.png">
+                  </div>
+                  <div class="screenshot">
+                    <img src="images/AMH.png">
+                  </div>
+
+                  <div class="hover-content"><i class="fa fa-arrows-alt"></i></div>
+                </div>
+              </a>
+              <br/>
+              <!-- Modal Structure -->
+              <div id="AMH" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                  <h4>Angry Man Hours</h4>
+                  <p>A fun little app built in two days at a hackathon. Designed to mimic Angry Birds but instead throw a CEO at a project. Site contains a simple HTML Canvas game as well as a drag and drop level builder.</p>
+                  <img src="images/AMH.png">
+                  <p><strong style="font-weight: 900;">Tools Used:</strong> AngularJS, Materialize CSS, ngRoute, jQuery UI, boxbox</p>
+                  <a href="https://github.com/Angry-Consultants/FE">Checkout the code!</a>
+                </div>
+                <div class="modal-footer">
+                  <a class="visit-site left-align" href="http://development.ammh-fe.divshot.io/#/play">Visit the site!</a>
+                  <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat ">Close</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+              <!-- Modal Trigger -->
+              <div class="modal-col col s4">
+                <a class="modal-trigger modal-hover shortwav-modal" href="#contactList">
+                <div class="modal-hover card-panel">
+                <div class="logo">
+                    <img src="images/contactlist.png">
+                  </div>
+                  <div class="screenshot">
+                    <img src="images/contact-list.png">
+                  </div>
+
+                  <div class="hover-content"><i class="fa fa-arrows-alt"></i></div>
+                </div>
+                </a>
+              <br/>
+              <!-- Modal Structure -->
+              <div id="contactList" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                  <h4>Beatles Contact List</h4>
+                  <p>A basic little contact list built with Backbone.</p>
+                  <img src="images/contact-list.png">
+                  <p><strong style="font-weight: 900;">Tools Used:</strong> Backbone, jQuery, Underscore.js</p>
+                  <a href="https://github.com/nickleach/Contact-List">Checkout the code!</a>
+                </div>
+                <div class="modal-footer">
+                  <a class="visit-site left-align" href="http://development.tiy-nick-contactlist.divshot.io/">Visit the site!</a>
+                  <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat ">Close</a>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+
+    </div>
+
+        <!-- Skills Section -->
     <div id="skills" class="skills section scrollspy">
       <div class="row container">
-        <div class="card-panel col s12">
+        <div class="card-panel col s12 image-fades2">
 
           <h4>Skills</h4>
           <hr/>
-           <aside class="code-image col s6 image-fades">
+           <aside class="code-image col s6 ">
             <img src="images/200B347E64.jpg">
           </aside>
           <ul class="col s6">
@@ -113,100 +226,8 @@
       </div>
     </div>
 
-    <!-- Portfolio -->
-    <div id="portfolio" class="portfolio section scrollspy">
-      <div class="row container">
-        <div class="card-panel col s12">
 
-          <h4>Portfolio</h4>
-          <hr/>
-
-                <!-- Modal Trigger -->
-    <div class="modal-col">
-      <a class="modal-trigger shortwav-modal" href="#shortWav">
-        <div class="logo">
-          <img src="images/shortwav-logo.png">
-        </div>
-        <div class="screenshot">
-          <img src="images/shortwav.png">
-        </div>
-      </a>
-
-      <!-- Modal Structure -->
-      <div id="shortWav" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <h4>shortWav</h4>
-          <label>Powered by Soundcloud</label>
-          <p>ShortWav is an online streaming service that brings local artists and curious listeners together. Any artist can upload their tracks by registering through their SoundCloud account, while listeners can create their own radio stations based on location and/or genre.</p>
-          <img src="images/shortwav.png">
-          <p><strong style="font-weight: 900;">Tools Used:</strong> AngularJS, Angular Material, SoundCloud API, UI-Router, PARSE</p>
-          <a href="https://github.com/shortWav/SWFE">Checkout the code!</a>
-        </div>
-        <div class="modal-footer">
-          <a class="visit-site left-align" href="http://shortwavradio.com">Visit the site!</a>
-          <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat ">Close</a>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- Modal Trigger -->
-    <div class="modal-col">
-      <a class="modal-trigger shortwav-modal" href="#AMH">
-        <div class="logo">
-          <img src="images/amh-logo.png">
-        </div>
-        <div class="screenshot">
-          <img src="images/AMH.png">
-        </div>
-      </a>
-      <br/>
-      <!-- Modal Structure -->
-      <div id="AMH" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <h4>Angry Man Hours</h4>
-          <p>A fun little app built in two days at a hackathon. Designed to mimic Angry Birds but instead throw a CEO at a project. Site contains a simple HTML Canvas game as well as a drag and drop level builder.</p>
-          <img src="images/AMH.png">
-          <p><strong style="font-weight: 900;">Tools Used:</strong> AngularJS, Materialize CSS, ngRoute, jQuery UI, boxbox</p>
-          <a href="https://github.com/Angry-Consultants/FE">Checkout the code!</a>
-        </div>
-        <div class="modal-footer">
-          <a class="visit-site left-align" href="http://development.ammh-fe.divshot.io/#/play">Visit the site!</a>
-          <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat ">Close</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal-col">
-      <!-- Modal Trigger -->
-      <a class="modal-trigger shortwav-modal" href="#contactList">
-        <div class="screenshot">
-        <img src="images/contact-list.png">
-        </div>
-      </a>
-      <br/>
-      <!-- Modal Structure -->
-      <div id="contactList" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <h4>Beatles Contact List</h4>
-          <p>A basic little contact list built with Backbone.</p>
-          <img src="images/contact-list.png">
-          <p><strong style="font-weight: 900;">Tools Used:</strong> Backbone, jQuery, Underscore.js</p>
-          <a href="https://github.com/nickleach/Contact-List">Checkout the code!</a>
-        </div>
-        <div class="modal-footer">
-          <a class="visit-site left-align" href="http://development.tiy-nick-contactlist.divshot.io/">Visit the site!</a>
-          <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat ">Close</a>
-        </div>
-      </div>
-    </div>
-         </div>
-      </div>
-
-    </div>
-
-    <!-- Second background image -->
+    <!-- Third background image -->
     <div class="parallax-container">
       <div class="parallax img-2"><img src="images/desert.jpg"></div>
     </div>
@@ -218,15 +239,15 @@
        <h4>Contact</h4>
        <ul>
 
-         <li><strong>Email:</strong>
+         <li><i class="fa fa-envelope-o"></i>
             <a href="mailto:nickleach22@gmail.com">nickleach22@gmail.com</a>
          </li>
 
-         <li><strong>GitHub:</strong>
+         <li><i class="fa fa-github"></i>
             <a href="https://github.com/nickleach">nickleach</a>
          </li>
 
-         <li><strong>Phone:</strong>
+         <li><i class="fa fa-phone"></i>
             <a href="callto:4046411000">404-641-1000</a>
          </li>
 
@@ -245,7 +266,6 @@
   <script src="js/vendor/scrollFire.js"></script>
 
   <script src="js/vendor/transitions.js"></script>
-
 
   <!-- // <script src="js/vendor/angular.js"></script> -->
 

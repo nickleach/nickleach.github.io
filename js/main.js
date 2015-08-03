@@ -9,31 +9,51 @@
 
     setTimeout(function() {
       Materialize.showStaggeredList('#staggered-list');
-    }, 2000);
 
-    var navChange = '$("nav").removeClass("transparent").addClass("nav-header-scroll")';
+    }, 1500);
 
 
     var options = [
     {selector: '.image-fades', offset: 200, callback: 'Materialize.fadeInImage(".image-fades")' },
-    {selector: '.nav-header', offset: 500, callback: navChange}
+    {selector: '.image-fades2', offset: 300, callback: 'Materialize.fadeInImage(".image-fades2")' }
   ];
     Materialize.scrollFire(options);
 
     $('.modal-trigger').leanModal();
 // class to add to nav-header : light-blue darken-4 and nav-wrapper
 
-  // Add active class on click nav bar
 
+// Window scroll stuff
 
-  $('#nav-mobile').on('click', 'a', function(){
-    $('li').removeClass('active');
-    $(this).closest('li').addClass('active');
+   $(window).scroll(function(){
+     var scroll = $(window).scrollTop();
+     if (scroll >= 300){
+      $('#nav-mobile').removeClass('hidden-nav');
+      $('.staggered-nav').addClass('hidden-nav');
+      $("nav").removeClass("transparent").addClass("nav-header-scroll");
+     }else {
+      $('#nav-mobile').addClass('hidden-nav');
+      $('.staggered-nav').removeClass('hidden-nav');
+      $("nav").addClass("transparent").removeClass("nav-header-scroll");
+     }
+      var scrollPos = $(window).scrollTop() + 100;
+      $('#nav-mobile li a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('#nav-mobile li').removeClass("active");
+          currLink.closest('li').addClass("active");
+        }
+      });
+   });
+
+   $('nav a').click(function () {
+    var $href = $(this).attr('href');
+    $('body').stop().animate({
+      scrollTop: $($href).offset().top
+    }, 1000);
+    return false;
   });
 
-  // Remove all active classes when name clicked
-  $('.brand-logo').on('click', function(){
-    $('li').removeClass('active');
-  });
 
 }());
