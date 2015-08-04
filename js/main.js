@@ -41,10 +41,14 @@
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-          $('#nav-mobile li').removeClass("active");
-          currLink.closest('li').addClass("active");
+          $('#nav-mobile li').removeClass("nav-active");
+          currLink.closest('li').addClass("nav-active");
         }
       });
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        $('#nav-mobile li').removeClass("nav-active");
+        $('#contactTab').addClass('nav-active');
+    }
    });
 
    $('nav a').click(function () {
