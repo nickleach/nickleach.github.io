@@ -32,12 +32,12 @@ p {
 .nav-active {
   background-color: black; }
 
-.section {
-  margin-top: 50px; }
-
 .hidden-nav {
   opacity: 0;
   transition: all 0.5s ease; }
+
+.section {
+  margin-top: 50px; }
 
 .card-panel {
   background-color: whitesmoke;
@@ -153,3 +153,29 @@ p {
   opacity: .7;
   background-color: black;
   width: 50%; }
+
+.contact {
+  background-image: url("../images/map2.jpg");
+  background-size: 110%;
+  background-position-y: -35px; }
+  .contact li {
+    display: inline-block;
+    margin: 50px; }
+  .contact ul {
+    width: 400px;
+    display: inline-block; }
+  .contact h4 {
+    color: white; }
+  .contact i {
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 30px;
+    color: white; }
+  .contact .fa-github {
+    background-color: black; }
+  .contact .fa-envelope-o {
+    background-color: darkgreen; }
+  .contact .fa-linkedin {
+    background-color: #1F84BA; }
+  .contact .fa-phone {
+    background-color: dimgrey; }

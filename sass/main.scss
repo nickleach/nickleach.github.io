@@ -23,6 +23,8 @@ nav{
 p{
   font-size: 20px;
 }
+
+// nav change stuff
 .transparent{
   h1{
     transition: all 0.5s ease;
@@ -38,13 +40,15 @@ p{
 .nav-active{
   background-color: black;
 }
-.section{
-  margin-top: 50px;
-}
 .hidden-nav{
   opacity: 0;
   transition: all 0.5s ease;
 }
+// Each section
+.section{
+  margin-top: 50px;
+}
+
 
 // boxes
 .card-panel{
@@ -94,6 +98,7 @@ p{
   }
 
 }
+
 .image-fades{
   opacity: 0;
 }
@@ -143,6 +148,7 @@ p{
 }
 .work-overlay{
   background:rgba(21, 20, 20, 0.67);
+
 }
 .shortwav-modal{
   img{
@@ -203,4 +209,40 @@ p{
     background-color: black;
     width: 50%;
 }
+.contact{
+  li{
+    display: inline-block;
+    margin: 50px;
+  }
+  ul{
+    width: 400px;
+    display: inline-block;
+  }
 
+  // -webkit-filter: grayscale(1);
+  // filter: grayscale(1);
+  background-image: url('../images/map2.jpg');
+  background-size: 110%;
+  background-position-y: -35px;
+    h4{
+    color: white;
+  }
+  i{
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+  }
+  .fa-github{
+    background-color: black;
+  }
+  .fa-envelope-o{
+    background-color: darkgreen;
+  }
+  .fa-linkedin{
+   background-color: #1F84BA;
+  }
+  .fa-phone{
+    background-color: dimgrey;
+  }
+}

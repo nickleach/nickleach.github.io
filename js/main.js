@@ -1,6 +1,7 @@
 ;( function(){
 
   'use strict';
+
   //Initialize Materialze Functions
 
 
@@ -14,9 +15,13 @@
 
 
     var options = [
+
     {selector: '.image-fades', offset: 200, callback: 'Materialize.fadeInImage(".image-fades")' },
     {selector: '.image-fades2', offset: 300, callback: 'Materialize.fadeInImage(".image-fades2")' }
-  ];
+
+    ];
+
+
     Materialize.scrollFire(options);
 
     $('.modal-trigger').leanModal();
@@ -26,6 +31,7 @@
 // Window scroll stuff
 
    $(window).scroll(function(){
+    // change nav
      var scroll = $(window).scrollTop();
      if (scroll >= 300){
       $('#nav-mobile').removeClass('hidden-nav');
@@ -36,6 +42,8 @@
       $('.staggered-nav').removeClass('hidden-nav');
       $("nav").addClass("transparent").removeClass("nav-header-scroll");
      }
+
+     // add active class when over the link
       var scrollPos = $(window).scrollTop() + 100;
       $('#nav-mobile li a').each(function () {
         var currLink = $(this);
@@ -45,11 +53,15 @@
           currLink.closest('li').addClass("nav-active");
         }
       });
+
+      // Active class to contact tab when at bottom of page
       if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         $('#nav-mobile li').removeClass("nav-active");
         $('#contactTab').addClass('nav-active');
     }
    });
+
+    // custom scroll on click
 
    $('nav a').click(function () {
     var $href = $(this).attr('href');
