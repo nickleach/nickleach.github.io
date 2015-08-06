@@ -16,8 +16,8 @@
 
     var options = [
 
-    {selector: '.image-fades', offset: 200, callback: 'Materialize.fadeInImage(".image-fades")' },
-    {selector: '.image-fades2', offset: 300, callback: 'Materialize.fadeInImage(".image-fades2")' }
+    {selector: '.image-fades', offset: 100, callback: 'Materialize.fadeInImage(".image-fades")' },
+    {selector: '.image-fades2', offset: 100, callback: 'Materialize.fadeInImage(".image-fades2")' }
 
     ];
 
