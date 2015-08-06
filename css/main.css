@@ -1,7 +1,7 @@
 body {
+  background-color: black;
   font-family: 'Titillium Web', sans-serif;
-  background-image: url("../images/space-background1.png");
-  background-size: 100%; }
+  background-image: url("../images/space-background1.png"); }
 
 h4 {
   text-align: center;
