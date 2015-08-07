@@ -20,7 +20,7 @@
     <!-- First background image -->
     <div class="parallax-container">
     <!-- Nav bar -->
-    <div class="navbar-fixed nav-header transparent ">
+    <div class="navbar-fixed nav-header">
       <nav class="transparent nav-initial">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo" style="padding-left: 20px">
@@ -42,22 +42,22 @@
       </nav>
     </div>
     <ul id="staggered-list" class="staggered-nav">
-      <li>
+      <li class="hoverable">
         <h5>
           <a class="about-link" href="#about">About</a>
         </h5>
       </li>
-      <li>
+      <li class="hoverable">
         <h5>
           <a href="#work">Work</a>
         </h5>
       </li>
-      <li>
+      <li class="hoverable">
         <h5>
           <a href="#skills">Skills</a>
         </h5>
       </li>
-      <li>
+      <li class="hoverable">
         <h5>
           <a href="#contact">Contact</a>
         </h5>
@@ -94,16 +94,16 @@
 
     <!-- work -->
     <div id="work" class="work scrollspy">
-      <div class="row work-overlay section">
+      <div class="row card-panel section">
         <div class="col s12">
 
-          <h4 style="color: white;">Work</h4>
+          <h4 >Work</h4>
           <hr/>
 
                       <!-- Modal Trigger -->
           <div class="modal-col col s4">
-            <a class="modal-trigger shortwav-modal" href="#shortWav">
-              <div class="modal-hover card-panel">
+            <a class="modal-trigger modal-hover shortwav-modal" href="#shortWav">
+              <div class="hoverable card-panel">
 
                 <div class="logo">
                   <img src="images/shortwav-logo.png">
@@ -139,7 +139,7 @@
             <div class="modal-col col s4">
 
                 <a class="modal-trigger modal-hover shortwav-modal" href="#AMH">
-                <div class="modal-hover card-panel">
+                <div class="hoverable card-panel">
                   <div class="logo">
                     <img src="images/amh-logo.png">
                   </div>
@@ -173,7 +173,7 @@
               <!-- Modal Trigger -->
               <div class="modal-col col s4">
                 <a class="modal-trigger modal-hover shortwav-modal" href="#contactList">
-                <div class="modal-hover card-panel">
+                <div class="hoverable card-panel">
                 <div class="logo">
                     <img src="images/contactlist.png">
                   </div>
@@ -212,10 +212,10 @@
 
           <h4>Skills</h4>
           <hr/>
-           <aside class="code-image col s6 ">
-            <img src="images/200B347E64.jpg">
-          </aside>
-          <ul class="col s6">
+           <div class="code-image center">
+            <img class="circle" src="images/200B347E64.jpg">
+
+          <ul>
             <li>JavaScript</li>
             <li>HTML</li>
             <li>CSS</li>
@@ -226,6 +226,7 @@
             <li>Git</li>
 
           </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -237,14 +238,15 @@
     </div>
 
     <!-- Contact -->
-    <div id="contact" class="contact scrollspy">
-      <div class="row work-overlay section col s12">
+    <div id="contact" class="contact section scrollspy container">
+      <div class="row card-panel">
        <h4>Contact</h4>
-       <div class="center">
+       <hr/>
+       <div>
        <ul>
 
          <li>
-            <a href="mailto:nickleach22@gmail.com" class="tooltipped hoverable" data-position="right" data-delay="50" data-tooltip="Email Me"><i class="fa fa-envelope-o"></i></a>
+            <a href="mailto:nickleach22@gmail.com" class="tooltipped hoverable" data-position="left" data-delay="50" data-tooltip="Email Me"><i class="fa fa-envelope-o"></i></a>
          </li>
 
          <li>
@@ -252,7 +254,7 @@
          </li>
 
         <li>
-            <a href="https://github.com/nickleach" class="tooltipped hoverable" data-position="right" data-delay="50" data-tooltip="My LinkedIn"><i class="fa fa-linkedin"></i> </a>
+            <a href="https://github.com/nickleach" class="tooltipped hoverable" data-position="left" data-delay="50" data-tooltip="My LinkedIn"><i class="fa fa-linkedin"></i> </a>
         </li>
 
          <li>

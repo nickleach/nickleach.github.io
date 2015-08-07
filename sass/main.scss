@@ -26,15 +26,26 @@ p{
 
 // nav change stuff
 .transparent{
+
   h1{
-    transition: all 0.5s ease;
+    transition: all 1s ease;
+    margin-left: 100px;
   }
   h3{
-    transition: all 0.5s ease;
+    transition: all 1s ease;
+      margin-left: 100px;
+      }
+  .fa{
+    transition: all 1s ease;
+    font-size: 50px;
+  }
+  .right{
+    transition: all 1s ease;
+    margin-top: 40px;
+    margin-right: 200px;
   }
 }
 .nav-initial{
-  height: 200px;
   transition: all 1s ease;
 }
 .nav-active{
@@ -42,14 +53,20 @@ p{
 }
 .hidden-nav{
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 // Each section
 .section{
   margin-top: 50px;
 }
 
-
+.about{
+  text-align: center;
+  p{
+    max-width: 650px;
+    margin: 10px auto;
+  }
+}
 // boxes
 .card-panel{
   background-color: whitesmoke;
@@ -66,15 +83,21 @@ p{
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   background-color: #0d47a1;
   height: 70px;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
   h1{
     margin-top: 8px;
     font-size: 35px;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
   }
   h3{
     opacity: 0;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
+  }
+  .fa{
+    transition: all 1s ease;
+  }
+  .right{
+    transition: all 1s ease;
   }
 }
 // containers
@@ -87,11 +110,13 @@ p{
   float: right;
   color: white;
   margin: 100px;
+  // margin-right: 300px;
   li{
-    margin-top: 20px;
+
+    padding: 5px;
   }
   h5{
-    font-size: 2.64rem;
+    font-size: 1.64rem;
   }
   a{
     color: white;
@@ -112,7 +137,8 @@ p{
 }
 .code-image{
   img{
-    width: 90%;
+    width: 40%;
+    // border-radius: 80px;
   }
 }
 .first-image{
@@ -144,7 +170,8 @@ p{
   }
 }
 .work{
-   background-image: url('../images/code.jpg');
+   // background-image: url('../images/code.jpg');
+
 }
 .work-overlay{
   background:rgba(21, 20, 20, 0.67);
@@ -156,11 +183,18 @@ p{
   }
 }
 .modal-content{
+  height: auto;
   text-align: center;
   img{
     width: 90%;
   }
+
 }
+.modal-trigger{
+
+}
+
+
 .modal-hover{
   position: relative;
 
@@ -188,8 +222,11 @@ p{
   color: lightgrey;
 }
 .screenshot{
+  max-height: 150px;
+  overflow: hidden;
   img{
     width: 100%;
+
   }
 }
 .logo{
@@ -212,26 +249,31 @@ p{
 .contact{
   li{
     display: inline-block;
-    margin: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
   }
   ul{
-    width: 400px;
+    width: 500px;
     display: inline-block;
   }
 
   // -webkit-filter: grayscale(1);
   // filter: grayscale(1);
-  background-image: url('../images/map2.jpg');
+  // background-image: url('../images/map2.jpg');
   background-size: 110%;
   background-position-y: -35px;
     h4{
-    color: white;
+    // color: white;
   }
   i{
-    border-radius: 40px;
-    padding: 20px;
-    font-size: 30px;
+    border-radius: 100px;
+    padding: 40px;
+    font-size: 50px;
     color: white;
+  }
+  .hoverable{
+    border-radius: 40px;
   }
   .fa-github{
     background-color: black;
